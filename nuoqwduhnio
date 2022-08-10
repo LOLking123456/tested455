@@ -1,0 +1,30 @@
+if not getgenv().MTAPIMutex then loadstring(game:HttpGet("https://raw.githubusercontent.com/KikoTheDon/MT-Api-v2/main/__source/mt-api%20v2.lua", true))() end
+local plr = game.Players.LocalPlayer
+local hook = nil
+local enabled = false
+
+plr.Character["Torso"]:AddPropertyEmulator("Size") -- fake size
+plr.Character["Torso"]:AddPropertyEmulator("Size") -- fake size
+
+
+        plr.Character["Torso"]:AddPropertyEmulator("Size") -- fake size
+        plr.Character["Torso"]:AddPropertyEmulator("Size") -- fake size
+        
+        for i,v in pairs(getconnections(plr.Character["Torso"]:GetPropertyChangedSignal("Size"))) do
+            v.Function = error
+            v:Disable() -- disable property changed
+        end
+        for i,v in pairs(getconnections(plr.Character["Torso"]:GetPropertyChangedSignal("Size"))) do
+            v.Function = error
+            v:Disable() -- disable property changed
+        end
+
+        plr.Character["Torso"].Size = Vector3.new(5, 5, 2.5)
+        plr.Character["Torso"].Size = Vector3.new(5, 5, 2.5)
+        plr.Character["Torso"].Transparency = 1
+        plr.Character["HumanoidRootPart"].Transparency = 0
+        plr.Character["HumanoidRootPart"].Color = Color3.fromRGB(0, 255, 0)
+        plr.Character["HumanoidRootPart"].Material = "Neon"
+        plr.Character["Torso"].Massless = true
+        plr.Character["Torso"].Massless = true
+        enabled = true
