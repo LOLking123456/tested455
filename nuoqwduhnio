@@ -19,8 +19,8 @@ plr.Character["Torso"]:AddPropertyEmulator("Size") -- fake size
             v:Disable() -- disable property changed
         end
 
-        plr.Character["Torso"].Size = Vector3.new(5, 5, 2.5)
-        plr.Character["Torso"].Size = Vector3.new(5, 5, 2.5)
+        plr.Character["Torso"].Size = Vector3.new(6.9, 5, 2.5)
+        plr.Character["Torso"].Size = Vector3.new(6.9, 5, 2.5)
         plr.Character["Torso"].Transparency = 1
         plr.Character["HumanoidRootPart"].Transparency = 0
         plr.Character["HumanoidRootPart"].Color = Color3.fromRGB(0, 255, 0)
